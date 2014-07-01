@@ -45,13 +45,3 @@ set laststatus=2
 command W :execute ':silent w !sudo tee % > /dev/null' | :edit!
 command Wq :execute ':W' | :q
 command WQ :Wq
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" FUNCTIONS
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-function! HasPaste()
-	    if &paste
-		            return 'PASTE MODE  '
-			        en
-				    return ''
-			    endfunction
