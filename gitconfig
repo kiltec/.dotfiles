@@ -1,5 +1,11 @@
 [include]
 	path = ~/.gitconfig.secret
+
+[user]
+	# Let git prompt me, if I forget to set a local email
+	# see: http://orrsella.com/2013/08/10/git-using-different-user-emails-for-different-repositories/
+	email = "(none)"
+
 [color]
 	diff = auto
 	status = auto
