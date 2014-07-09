@@ -1,0 +1,32 @@
+[include]
+	path = ~/.gitconfig.secret
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	ui = true
+[alias]
+	ci = commit
+	co = checkout
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+	lgme = log --author=sprudelpaul
+	br = branch
+	sr = svn rebase
+	sdc = svn dcommit
+	st = stash
+	find-ref = "!f() { git log --grep=\"^git-svn-id:.*@$1\" --format='%H'; }; f"
+	find-rev = "!f() { git svn find-rev $1; }; f"
+	c-p = cherry-pick
+[diff "exif"]
+	textconv = exiftool
+[core]
+	whitespace = trailing-space,space-before-tab
+	editor = vim
+[diff]
+	renames = copies
+[rerere]
+	enabled = true
+[mergetool]
+	keepBackup = false
+[push]
+	default = simple
