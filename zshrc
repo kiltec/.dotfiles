@@ -74,3 +74,4 @@ export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/g
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
 source $HOME/.aliases
+source $HOME/.zsh_secret
