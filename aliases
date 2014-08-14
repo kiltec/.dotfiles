@@ -1,1 +1,2 @@
 # My own aliases
+alias vup="/usr/bin/vagrant up"
