@@ -34,6 +34,7 @@
 	save = !git add -A && git commit -m 'SAVEPOINT'
 	# only commits tracked changes
 	wip = !git add -u && git commit -m "WIP"
+	up= !git fetch origin && git merge --ff origin/$1
 [diff "exif"]
 	textconv = exiftool
 [core]
