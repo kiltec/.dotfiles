@@ -19,7 +19,7 @@
 	br = branch
 	sr = svn rebase
 	sdc = svn dcommit
-	st = status
+	st = status -sb
 	find-ref = "!f() { git log --grep=\"^git-svn-id:.*@$1\" --format='%H'; }; f"
 	find-rev = "!f() { git svn find-rev $1; }; f"
 	c-p = cherry-pick
