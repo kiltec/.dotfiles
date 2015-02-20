@@ -1,2 +1,3 @@
 # My own aliases
 alias vup="/usr/bin/vagrant up"
+alias gdiff="git diff --word-diff"
