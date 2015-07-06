@@ -59,6 +59,8 @@ set nowrap
 set number
 " Always show the status line
 set laststatus=2
+" Enable mouse use in all modes
+set mouse=a
 
 " Set default statusline so syntastic won't overwrite it
 set statusline=%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
