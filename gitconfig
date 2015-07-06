@@ -35,6 +35,9 @@
 	# only commits tracked changes
 	wip = !git add -u && git commit -m "WIP"
 	up= !git fetch origin && git merge --ff origin/$1
+	# http://haacked.com/archive/2015/06/29/git-migrate/
+	migrate = "!f(){ CURRENT=$(git symbolic-ref --short HEAD); git checkout -b $1 && git branch --force $CURRENT ${3-'$CURRENT@{u}'} && git rebase --onto ${2-master} $CURRENT; }; f"
+
 [diff "exif"]
 	textconv = exiftool
 [core]
