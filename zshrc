@@ -78,3 +78,5 @@ export HISTFILESIZE=$HISTSIZE
 
 source $HOME/.aliases
 source $HOME/.zsh_secret
+
+export GOPATH=$HOME/go
