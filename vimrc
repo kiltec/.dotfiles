@@ -7,6 +7,7 @@ filetype plugin on
 filetype indent on
 " remember more commands and search history
 set history=10000
+set undolevels=1000
 set autoindent
 set hlsearch
 set incsearch
