@@ -37,6 +37,7 @@ set novisualbell
 " Set utf8 as standard encoding and en_US as the standard language
 set encoding=utf8
 set nowrap
+set number
 " Always show the status line
 set laststatus=2
 
