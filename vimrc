@@ -61,6 +61,11 @@ set number
 set laststatus=2
 " Enable mouse use in all modes
 set mouse=a
+" Pasting text into a terminal running Vim with automatic indentation enabled
+" can destroy the indentation of the pasted text. Toggles paste modes to be
+" able to avoid this behavior.
+" see: http://vim.wikia.com/wiki/Toggle_auto-indenting_for_code_paste
+set pastetoggle=<F2>
 
 " Set default statusline so syntastic won't overwrite it
 set statusline=%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
