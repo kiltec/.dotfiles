@@ -12,7 +12,9 @@ set autoindent
 set hlsearch
 set incsearch
 " make searches case-sensitive only if they contain upper-case characters
-set ignorecase smartcase
+set ignorecase
+set smartcase
+
 " keep more context when scrolling off the end of a buffer
 set scrolloff=3
 " Enable highlighting for syntax
