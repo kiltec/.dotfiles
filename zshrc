@@ -80,3 +80,5 @@ source $HOME/.aliases
 source $HOME/.zsh_secret
 
 export GOPATH=$HOME/go
+
+source /usr/local/share/chruby/chruby.sh
