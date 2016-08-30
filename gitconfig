@@ -44,6 +44,7 @@
 [core]
 	whitespace = trailing-space,space-before-tab
 	editor = vim
+	ignorecase = false
 [diff]
 	renames = copies
 [rerere]
