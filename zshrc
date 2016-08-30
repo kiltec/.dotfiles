@@ -82,3 +82,6 @@ source $HOME/.aliases
 export GOPATH=$HOME/go
 
 source /usr/local/share/chruby/chruby.sh
+
+export NVM_DIR="/home/lars/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
