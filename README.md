@@ -2,7 +2,7 @@
 
 ## Installation
 
-### Using rcm
+### Using rcm (recommended)
 I use https://github.com/thoughtbot/rcm (and Git of course) to manage my dotfiles.
 
 Install rcm: https://github.com/thoughtbot/rcm
