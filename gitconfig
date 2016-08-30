@@ -47,6 +47,7 @@
 	ignorecase = false
 [diff]
 	renames = copies
+	compactionHeuristic = true
 [rerere]
 	enabled = true
 [mergetool]
