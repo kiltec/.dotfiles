@@ -1,4 +1,5 @@
 # My .dotfiles
+This is a collection of the dotfiles I'd like to be able to quickly install on any new machines, to keep track of any changes to them and synchronize those changes across the computers I use.
 
 ## Installation
 
