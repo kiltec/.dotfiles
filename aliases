@@ -1,2 +1,3 @@
 # My own aliases
 alias gdiff="git diff --word-diff"
+alias delmerged='git branch --merged master | grep -v "\* master" | xargs -n 1 git branch -d'
