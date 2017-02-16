@@ -14,6 +14,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'fatih/vim-go'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/syntastic'
+Plugin 'vim-scripts/ShowTrailingWhitespace'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
