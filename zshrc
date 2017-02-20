@@ -48,7 +48,7 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git composer zsh-syntax-highlighting vagrant github aws)
+plugins=(git composer zsh-syntax-highlighting vagrant github aws ssh-agent)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -78,3 +78,5 @@ export HISTFILESIZE=$HISTSIZE
 
 source $HOME/.zsh_secret
 source $HOME/.aliases
+
+zstyle :omz:plugins:ssh-agent agent-forwarding on
