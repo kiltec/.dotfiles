@@ -37,7 +37,7 @@
 	migrate = "!f(){ CURRENT=$(git symbolic-ref --short HEAD); git checkout -b $1 && git branch --force $CURRENT ${3-'$CURRENT@{u}'} && git rebase --onto ${2-master} $CURRENT; }; f"
 	pp = !sh -c 'git push --set-upstream origin $(git symbolic-ref --short HEAD) && hub pull-request'
 	pup = !sh -c 'git push --set-upstream origin $(git symbolic-ref --short HEAD)'
-	standup = lg --author="Lars Tesmer" --since=yesterday
+	standup = lg --author='Lars Tesmer' --since=yesterday
 	staged = diff --staged
 
 [diff "exif"]
