@@ -17,8 +17,6 @@
 	cob = checkout -b
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
 	br = branch
-	sr = svn rebase
-	sdc = svn dcommit
 	st = status -sb
 	find-ref = "!f() { git log --grep=\"^git-svn-id:.*@$1\" --format='%H'; }; f"
 	find-rev = "!f() { git svn find-rev $1; }; f"
