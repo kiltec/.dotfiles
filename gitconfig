@@ -58,3 +58,11 @@
 	keepBackup = false
 [push]
 	default = simple
+
+[merge]
+	tool=meld
+
+[mergetool "meld"]
+    # Choose one of these 2 lines (not both!)
+    cmd = meld "$LOCAL" "$MERGED" "$REMOTE" --output "$MERGED"
+    # cmd = meld "$LOCAL" "$BASE" "$REMOTE" --output "$MERGED"
