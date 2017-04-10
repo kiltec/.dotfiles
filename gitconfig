@@ -41,6 +41,7 @@
 	staged = diff --staged
 	prune = fetch --pruned
 	stash-all = stash save --include-untracked
+	push-f = push --force-with-lease
 
 [diff "exif"]
 	textconv = exiftool
