@@ -39,6 +39,7 @@
 	pup = !sh -c 'git push --set-upstream origin $(git symbolic-ref --short HEAD)'
 	standup = lg --author='Lars Tesmer' --since=yesterday
 	staged = diff --staged
+	prune = fetch --pruned
 
 [diff "exif"]
 	textconv = exiftool
