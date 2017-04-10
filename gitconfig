@@ -75,3 +75,5 @@
 	fsckobjects = true
 [stash]
 	showPatch = true
+[pull]
+	ff = only
