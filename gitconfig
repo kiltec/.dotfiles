@@ -58,6 +58,7 @@
 	keepBackup = false
 [push]
 	default = simple
+	followTags = true
 
 [merge]
 	tool=meld
