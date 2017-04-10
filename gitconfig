@@ -61,6 +61,7 @@
 	followTags = true
 
 [merge]
+	conflictstyle = diff3
 	tool=meld
 
 [mergetool "meld"]
