@@ -73,3 +73,5 @@
 
 [transfer]
 	fsckobjects = true
+[stash]
+	showPatch = true
