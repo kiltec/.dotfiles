@@ -40,6 +40,7 @@
 	standup = lg --author='Lars Tesmer' --since=yesterday
 	staged = diff --staged
 	prune = fetch --pruned
+	stash-all = stash save --include-untracked
 
 [diff "exif"]
 	textconv = exiftool
