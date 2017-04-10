@@ -71,8 +71,6 @@
     cmd = meld "$LOCAL" "$MERGED" "$REMOTE" --output "$MERGED"
     # cmd = meld "$LOCAL" "$BASE" "$REMOTE" --output "$MERGED"
 
-[transfer]
-	fsckobjects = true
 [stash]
 	showPatch = true
 [pull]
