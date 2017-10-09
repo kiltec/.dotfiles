@@ -80,3 +80,4 @@ source $HOME/.zsh_secret
 source $HOME/.aliases
 
 zstyle :omz:plugins:ssh-agent agent-forwarding on
+zstyle :omz:plugins:ssh-agent identities id_rsa s2_id_rsa
