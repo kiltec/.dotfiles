@@ -48,7 +48,11 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git composer zsh-syntax-highlighting vagrant github aws ssh-agent)
+
+# To get zsh-nvm working do:
+# git clone https://github.com/lukechilds/zsh-nvm ~/.oh-my-zsh/custom/plugins/zsh-nvm
+export NVM_LAZY_LOAD=true
+plugins=(git composer zsh-syntax-highlighting vagrant github aws ssh-agent zsh-nvm)
 
 source $ZSH/oh-my-zsh.sh
 
