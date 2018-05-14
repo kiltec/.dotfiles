@@ -42,6 +42,7 @@
 	prune = fetch --prune
 	stash-all = stash save --include-untracked
 	push-f = push --force-with-lease
+	fup = commit --amend --no-edit
 	diff = diff --color-moved
 	show = show --color-moved
 
