@@ -54,6 +54,9 @@ COMPLETION_WAITING_DOTS="true"
 export NVM_LAZY_LOAD=true
 plugins=(git composer zsh-syntax-highlighting vagrant github aws ssh-agent zsh-nvm)
 
+zstyle :omz:plugins:ssh-agent agent-forwarding on
+zstyle :omz:plugins:ssh-agent identities id_rsa s2_id_rsa
+
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -82,6 +85,3 @@ export HISTFILESIZE=$HISTSIZE
 
 source $HOME/.zsh_secret
 source $HOME/.aliases
-
-zstyle :omz:plugins:ssh-agent agent-forwarding on
-zstyle :omz:plugins:ssh-agent identities id_rsa s2_id_rsa
