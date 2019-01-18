@@ -1,3 +1,23 @@
 # My own aliases
 alias gdiff="git diff --word-diff"
 alias nom='cowsay -s "nom nom nom"'
+
+# s2
+alias feature=_feature
+alias task=_task
+
+function _task () {
+	TASK="task/dcc-$*"
+	NO_SPACES=${TASK// /-}
+	NAME=`echo "$NO_SPACES" | awk '{print tolower($0)}'`
+
+ 	git checkout -b $NAME
+}
+
+function _feature () {
+	FEATURE="feature/dcc-$*"
+	NO_SPACES=${FEATURE// /-}
+	NAME=`echo "$NO_SPACES" | awk '{print tolower($0)}'`
+
+ 	git checkout -b $NAME master
+}
