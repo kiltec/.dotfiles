@@ -45,6 +45,9 @@
 	fup = commit --amend --no-edit
 	diff = diff --color-moved
 	show = show --color-moved
+	delmerged = "!git co master && git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
+	# see: https://stackoverflow.com/a/33244119
+	forcefix = "!f(){ echo -n \"Reset \\033[0;33m$(git symbolic-ref -q --short HEAD)\\033[0m to \\033[0;33m$(git for-each-ref --format='%(upstream:short)' $(git symbolic-ref -q HEAD))\\033[0m? (Y/n) \"; read -r ans; if [ \"$ans\" = \"y\" -o \"$ans\" = \"Y\" -o -z \"$ans\" ]; then git reset --hard $(git for-each-ref --format='%(upstream:short)' $(git symbolic-ref -q HEAD)); else echo \"catchup aborted\"; fi }; f"
 
 [diff "exif"]
 	textconv = exiftool
