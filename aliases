@@ -7,7 +7,7 @@ alias feature=_feature
 alias task=_task
 
 function _task () {
-	TASK="task/dcc-$*"
+	TASK="$*"
 	NO_SPACES=${TASK// /-}
 	NAME=`echo "$NO_SPACES" | awk '{print tolower($0)}'`
 
@@ -15,7 +15,7 @@ function _task () {
 }
 
 function _feature () {
-	FEATURE="feature/dcc-$*"
+	FEATURE="$*"
 	NO_SPACES=${FEATURE// /-}
 	NAME=`echo "$NO_SPACES" | awk '{print tolower($0)}'`
 
