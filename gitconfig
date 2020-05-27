@@ -39,7 +39,6 @@
 	pup = !sh -c 'git push --set-upstream origin $(git symbolic-ref --short HEAD)'
 	standup = lg --author='Lars Tesmer' --since=yesterday
 	staged = diff --staged --color-moved
-	prune = fetch --prune
 	stash-all = stash save --include-untracked
 	push-f = push --force-with-lease
 	fup = commit --amend --no-edit
