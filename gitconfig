@@ -40,7 +40,7 @@
 	standup = lg --author='Lars Tesmer' --since=yesterday
 	staged = diff --staged --color-moved
 	stash-all = stash save --include-untracked
-	push-f = push --force-with-lease
+	puf = push --force-with-lease
 	fup = commit --amend --no-edit
 	diff = diff --color-moved
 	show = show --color-moved
