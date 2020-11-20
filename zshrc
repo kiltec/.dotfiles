@@ -52,7 +52,7 @@ COMPLETION_WAITING_DOTS="true"
 # To get zsh-nvm working do:
 # git clone https://github.com/lukechilds/zsh-nvm ~/.oh-my-zsh/custom/plugins/zsh-nvm
 export NVM_LAZY_LOAD=true
-plugins=(git composer zsh-syntax-highlighting vagrant github aws ssh-agent zsh-nvm autojump)
+plugins=(git composer zsh-syntax-highlighting vagrant github aws ssh-agent zsh-nvm autojump bundler)
 
 zstyle :omz:plugins:ssh-agent agent-forwarding on
 zstyle :omz:plugins:ssh-agent identities id_rsa s2_id_rsa
@@ -61,7 +61,10 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/$PATH:usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/lars/.local/bin:/home/lars/.yarn/bin/"
+export PATH="/$PATH:usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/lars/.local/bin:/home/lars/.yarn/bin/:/home/lars/.rbenv/bin:/snap/bin"
+
+eval "$(rbenv init -)"
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
