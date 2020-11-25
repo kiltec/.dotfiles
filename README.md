@@ -24,7 +24,7 @@ repo's `rcrc` to `~/.rcrc` for future runs of `rcup`).
 ### Manual installation
 Clone onto the target machine and move any dotfile you'd like to use into you home directory or create symlinks pointing to the clone in you home dir. Remember to rename the files by prepending `.` to the filename.
 
-##Issues
+## Issues
 
 Feel free to submit issues and enhancement requests.
 
