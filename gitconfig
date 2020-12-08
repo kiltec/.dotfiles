@@ -60,7 +60,7 @@
 	renames = copies
 	compactionHeuristic = true
 [rerere]
-	enabled = true
+	enabled = false 
 [mergetool]
 	keepBackup = false
 [push]
