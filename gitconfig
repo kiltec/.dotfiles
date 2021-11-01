@@ -1,5 +1,7 @@
 [include]
 	path = ~/.gitconfig.secret
+[init]
+defaultBranch = main
 
 [user]
 	# Let git prompt me, if I forget to set a local email

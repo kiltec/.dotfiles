@@ -55,7 +55,7 @@ export NVM_LAZY_LOAD=true
 plugins=(git composer zsh-syntax-highlighting vagrant github aws ssh-agent zsh-nvm autojump bundler)
 
 zstyle :omz:plugins:ssh-agent agent-forwarding on
-zstyle :omz:plugins:ssh-agent identities id_rsa s2_id_rsa
+# zstyle :omz:plugins:ssh-agent identities id_rsa s2_id_rsa
 
 source $ZSH/oh-my-zsh.sh
 
