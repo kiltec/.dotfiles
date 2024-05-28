@@ -58,6 +58,7 @@
 	ignorecase = false
 	pager = diff-so-fancy | less --tabs=4 -RFX
 	excludesfile = /home/lars/.gitignore
+	safecrlf = true
 [diff]
 	renames = copies
 	compactionHeuristic = true
