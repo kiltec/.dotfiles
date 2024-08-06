@@ -72,7 +72,7 @@
 
 [merge]
 	ff = only
-	tool=meld
+	tool = meld
 
 [mergetool "meld"]
     # Choose one of these 2 lines (not both!)
