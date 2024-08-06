@@ -73,6 +73,7 @@
 [merge]
 	ff = only
 	tool = meld
+	conflictStyle = zdiff3
 
 [mergetool "meld"]
     # Choose one of these 2 lines (not both!)
