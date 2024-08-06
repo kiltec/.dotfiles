@@ -1,30 +1,11 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
-
-" let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
-
-" Additional plugins
-Plugin 'fatih/vim-go'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'scrooloose/syntastic'
-Plugin 'vim-scripts/ShowTrailingWhitespace'
-
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
 filetype plugin indent on    " required
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " EDITOR CONFIG
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Enable filetype plugins
-filetype plugin on
 " remember more commands and search history
 set history=10000
 set undolevels=1000
@@ -70,41 +51,6 @@ set pastetoggle=<F2>
 
 " Set default statusline so syntastic won't overwrite it
 set statusline=%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Syntastic
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 0
-let g:syntastic_auto_loc_list = 0
-let g:syntastic_check_on_open = 1
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" vim-go
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:go_fmt_command = "goimports"
-let g:go_auto_type_info = 1
-let g:go_highlight_operators = 1
-" show a list of interfaces which is implemented by the type
-" under your cursor with <leader>s
-au FileType go nmap <Leader>s <Plug>(go-implements)
-
-" Open the relevant Godoc for the word under the cursor with
-" <leader>gd or open it vertically with <leader>gv
-au FileType go nmap <Leader>gd <Plug>(go-doc)
-au FileType go nmap <Leader>gv <Plug>(go-doc-vertical)
-
-" open the Godoc in browser
-au FileType go nmap <Leader>gb <Plug>(go-doc-browser)
-
-" Run various commands
-au FileType go nmap <leader>r <Plug>(go-run)
-au FileType go nmap <leader>b <Plug>(go-build)
-au FileType go nmap <leader>t <Plug>(go-test)
-au FileType go nmap <leader>c <Plug>(go-coverage)
-au FileType go nmap <Leader>e <Plug>(go-rename)
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " COMMANDS
